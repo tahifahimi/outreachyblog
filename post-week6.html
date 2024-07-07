@@ -78,7 +78,7 @@
                     <div class="post-heading" style="color: black;">
                         <h1>Week 6 Blog: Mid-Internship Progress Report</h1>
                         <h2 class="subheading">Take another looks to the milestones and goals</h2>
-                        <span class="meta">Posted by <a href="#">Tahera Fahimi</a> on July 4, 2024</span>
+                        <span class="meta">Posted by <a href="#">Tahera Fahimi</a> on July 7, 2024</span>
                     </div>
                 </div>
             </div>
@@ -90,26 +90,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p></p>
+                    <p>In the following, I cover the primary plan of the internship period, and what changes happened while getting close to the  mid-internship.</p>
                     
                     <h2>Original Internship Project Timeline</h2>
                     
-                    <p></p>
-                    
+                    <p>The main plan of the internship includes three main tasks as follows:</p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/landlock-lsm/linux/issues/7">Abstract unix socket control</a>: implementation of an scoping mechanism for abstract unix sockets when it tries to connect to a non-sandboxed socket.
+                        </li>
+                        <li>
+                            <a href="https://github.com/landlock-lsm/linux/issues/8">Signal scoping mechanism</a>: Same as abstract unix sockets, but for handling signals.
+                        </li>
+                        <li>
+                            <a href="https://github.com/landlock-lsm/linux/issues/6">Socket type control</a>:Being able to restrict any kind of socket would definitely be useful for a sandbox.
+                        </li>
+                    </ul>
+                    <p>We broke them down into six milestones. Each task has two milestones for developing the kernel and test/documentation parts.</p>
+
                     <h2>Goals Met</h2>
 
-                    <p></p>
+                    <p>The goal was to start from a more straightforward task and become more familiar with the codes and repository, focusing on more complex tasks. Therefore, we start from the first task and learn more about how landlock works and how the scoping mechanism should be implemented.</p>
 
                     <h2>Accomplishments in the First Half</h2>
 
-                    <p></p>
+                    <p>I have been able to submit several versions of codes for the first and second tasks. Each version demonstrates my efforts in solving different issues that I faced during the solution's implementation.
+                        Here are different versions of the code:</p>
+                    <ul>
+                        <li><a href="https://lore.kernel.org/outreachy/123a6889-4a28-40c4-b322-3537545824e6@schaufler-ca.com/T/#t">Patch V1</a></li>
+                        <li><a href="https://lore.kernel.org/outreachy/20240607132410.GC27689@kernel.org/T/#t"></a>Patch V2</li>
+                        <li><a href="https://lore.kernel.org/outreachy/Zmi8Ydz4Z6tYtpY1@tahera-OptiPlex-5000/T/#t"></a>Patch V3</li>
+                        <li><a href="https://lore.kernel.org/outreachy/20240621.OhK4Aht4oa7i@digikod.net/T/#t"></a>Patch v4</li>
+                        <li><a href="https://lore.kernel.org/outreachy/Zn32CYZiu7pY+rdI@tahera-OptiPlex-5000/T/#u"></a>Patch V6</li>
+                        <li><a href="https://lore.kernel.org/outreachy/cover.1720203255.git.fahimitahera@gmail.com/T/#u"></a>Patch Serie - Final Submission</li>
+                    </ul>
+                    <p>In this part, I want to express my gratitude to my mentors, Mickael and Paul, who helped me every step of the way.</p>
 
                     <h3>Project Goals That Took Longer Than Expected</h3>
-                    <b>Reasons:</b>
+                    <p>One of the steps that I did not expect more time was when I was trying to scope the Abstract Unix sockets with the credentials of the process using it. Since the datagram sockets do not store the credentials in the sockets, we had to change our solution, which led to changing our testing and implementation. Hopefully, we can handle this complexity in the expected time. Thanks to my mentors for their support.</p>
+
+                    <h3>What would you do differently if you were starting the project over?</h3>
+                    <p>I would spend more time on documentation. I keep track of everything via email, but I think it would benefit the open-source community if I could provide more details on each step of my work through more descriptive documents. </p>
 
                     <h2>Modified Goals</h2>
-                    
-                    <h2>Conclusion</h2>
+                    <p>Since another member of the community has already solved my third task, I need to pick another task. Hopefully, I have some backup tasks on my mind:</p>
+                    <ol>
+                        <li>List is under updates!</li>
+                    </ol>
                     
                 </div>
             </div>
